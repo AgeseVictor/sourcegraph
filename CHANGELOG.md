@@ -11,7 +11,7 @@
 
 All notable changes to Sourcegraph are documented in this file.
 
-<!-- START CHANGELOG -->
+<!-- START CHANGELOG YAY -->
 
 ## Unreleased
 
