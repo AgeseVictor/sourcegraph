@@ -97,5 +97,61 @@ kbd {
 }
 
 .search-regexp-meta-range-quantifier {
-    color: var(--search-regexp-meta-character-range-quantifier-color);
+    color: var(--search-regexp-meta-range-quantifier-color);
+}
+
+.search-revision-separator {
+    color: var(--search-revision-separator-color);
+}
+
+.search-revision-include-glob-marker {
+    color: var(--search-revision-include-glob-marker-color);
+}
+
+.search-revision-exclude-glob-marker {
+    color: var(--search-revision-exclude-glob-marker-color);
+}
+
+.search-revision-commit-hash {
+    color: var(--search-revision-commit-hash-color);
+}
+
+.search-revision-label {
+    color: var(--search-revision-label-color);
+}
+
+.search-revision-reference-path {
+    color: var(--search-revision-reference-path-color);
+}
+
+.search-revision-wildcard {
+    color: var(--search-revision-wildcard-color);
+}
+
+.search-predicate-name-access {
+    color: var(--search-predicate-name-access-color);
+}
+
+.search-predicate-dot {
+    color: var(--search-predicate-dot-color);
+}
+
+.search-predicate-parenthesis {
+    color: var(--search-predicate-parenthesis-color);
+}
+
+.search-structural-hole {
+    color: var(--search-structural-hole-color);
+}
+
+.search-structural-regexp-hole {
+    color: var(--search-structural-regexp-hole-color);
+}
+
+.search-structural-variable {
+    color: var(--search-structural-variable-color);
+}
+
+.search-structural-regexp-separator {
+    color: var(--search-structural-regexp-separator-color);
 }
