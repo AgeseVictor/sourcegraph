@@ -188,7 +188,10 @@ export const RecentSearchesPanel: React.FunctionComponent<React.PropsWithChildre
                             <td>
                                 <small className={styles.recentQuery}>
                                     <Link to={recentSearch.url} onClick={logSearchClicked} ref={getItemRef(index)}>
-                                        <SyntaxHighlightedSearchQuery query={recentSearch.searchText} />
+                                        <SyntaxHighlightedSearchQuery
+                                            query={recentSearch.searchText}
+                                            searchPatternType={SearchPatternType.structural} /* fix this */
+                                        />
                                     </Link>
                                 </small>
                             </td>
