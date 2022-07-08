@@ -4,7 +4,7 @@ import { mdiAlertCircle, mdiSync, mdiInformationOutline } from '@mdi/js'
 import { formatDistance, isBefore, parseISO } from 'date-fns'
 
 import { isErrorLike } from '@sourcegraph/common'
-import { LoadingSpinner, Icon, Tooltip } from '@sourcegraph/wildcard'
+import { LoadingSpinner, Icon, Tooltip, Button } from '@sourcegraph/wildcard'
 
 import { ExternalChangesetFields, HiddenExternalChangesetFields } from '../../../../graphql-operations'
 import { syncChangeset } from '../backend'
@@ -114,9 +114,11 @@ const UpdateLoaderIcon: React.FunctionComponent<
 
     if (viewerCanAdminister) {
         return (
-            <Icon
+            <Button
+                as={Icon}
+                variant="icon"
+                tabIndex={0}
                 aria-label="Refresh"
-                className="cursor-pointer"
                 onClick={onEnqueueChangeset}
                 role="button"
                 svgPath={mdiSync}
